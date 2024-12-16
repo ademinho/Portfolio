@@ -1,0 +1,860 @@
+body {
+    background-image: url(/img/324914bb1233fa62e640c6a1133d550c.jpg);
+    font-family: Poppins;
+}
+
+ul {
+    display: flex;
+    padding: 3rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 9%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    background-color: whitesmoke;
+    padding: 4px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(161, 151, 151, 0.5);
+    color: black;
+    outline: none;
+    align-items: center; /* Center vertically */
+}
+
+li {
+    margin: 0 5px; /* Adds space between list items */
+    padding: 0 5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: gray;
+    text-decoration: none;
+}
+
+/* Flexbox container for icons */
+.icons {
+    display: flex;  /* Align items horizontally */
+    margin-top: 59px;  /* Adjust to move below the navbar */
+    margin-left: 77%;
+
+
+}
+
+.profil {
+    height: 30px; /* Même taille que LinkedIn et GitHub */
+    width: 30px; /* Largeur égale à la hauteur pour la rendre circulaire */
+    border-radius: 50%; /* Rendre l'image circulaire */
+    border: 2px solid grey; /* Léger contour gris */
+    object-fit: cover; /* Assure que l'image s'adapte bien au conteneur circulaire */
+    margin: 0 10px; /* Ajoute de l'espace entre les icônes */
+    cursor: pointer; /* Change le curseur en main */
+    margin-top: 4rem;
+    margin-left: 10rem;
+}
+
+/* Styling for the LinkedIn and GitHub icons inside the navbar */
+.linkedin, .github {
+    height: 30px;
+    cursor: pointer;
+    margin-left: 10px; /* Adds space between the icons and text */
+    vertical-align: middle; /* Aligns icons vertically */
+}
+
+.linkedin {
+    height: 30px;
+}
+
+.github {
+    height: 30px;
+}
+
+
+.title{
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+    color: black;
+    margin-top: 8rem;
+    margin-left: 10rem;
+    
+}
+
+.subtitle{
+    font-size: 20px;
+    padding: 0;
+    color: black;
+    margin-top: 1rem;
+    font-family: Nunito Sans;
+    margin-left: -2rem;
+}
+
+.text{
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    color: black;
+    margin-top: 2rem;
+    margin-left: 10rem;
+    font-family: Nunito Sans;
+}
+
+.hr1{
+    width: 60%;
+    height: 0.5px;
+    background-color: grey;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+
+.title2{
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    color: black;
+    margin-top: 5rem;
+    margin-left: 10rem;
+    font-family: Poppins;
+
+}
+
+.school-info {
+    display: flex;  /* Flexbox container for p1 and p2 */
+    justify-content: flex-start;  /* Align items to the start */
+    align-items: center;  /* Align vertically */
+    margin-left: 10rem;  /* Left margin */
+    margin-top: 2rem;  /* Top margin */
+}
+
+.p1 {
+    font-size: 19px;
+    color: grey;
+    font-family: Nunito Sans;
+    margin-right: 2rem;  /* Space between p1 and p2 */
+}
+
+.p2 {
+    font-size: 15px;
+    color: black;
+    font-family: Poppins;
+    
+}
+
+/* Styling for p3, which will be below p1 and p2 */
+.p3 {
+    font-size: 15px;
+    color: black;
+    font-family: Nunito Sans;
+    margin-left: 18.5rem;
+    margin-top: 1rem;  /* Space between p3 and the above elements */
+}
+
+
+
+/* Style de base pour l'image */
+.img1 {
+    width: 23rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Ajoute une transition */
+}
+
+/* Animation lorsque l'on passe la souris sur l'image */
+.img1:hover {
+    transform: scale(1.05); /* Agrandit légèrement l'image */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Ajoute une ombre plus marquée */
+}
+
+
+.p4 {
+    margin-left: 0rem;
+    color: black;
+    font-size: 14px;
+    font-family: Nunito Sans;
+    margin-top: 20px; /* Réduit l'écart entre .pop et .p4 */
+}
+
+
+
+.pop {
+    font-size: 12px;
+    margin-top: 0.5rem; /* Espace entre l'image et l'élément .pop */
+    display: inline-block;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    text-align: center; /* Centrer le texte dans le conteneur */
+    cursor: pointer;
+    font-family: Nunito Sans;
+}
+
+
+.img-container {
+    display: flex;
+    flex-direction: column; /* Empile verticalement les éléments */
+    align-items: flex-start; /* Aligne les éléments à gauche */
+    margin-left: 10rem; /* Aligne horizontalement avec .title2 */
+    margin-bottom: 2rem; /* Espace en bas */
+    margin-top: 3rem; /* Espace en haut */
+}   
+
+.title4 {
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    color: black;
+    margin-top: 1rem; /* Réduit l'espace entre .pop et .title4 */
+    margin-left: 10rem;
+    font-family: Poppins;
+}
+
+.title5 {
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    color: black;
+    margin-bottom: 0.5rem;
+    margin-left: 0rem; /* Ajuste cette valeur pour déplacer vers la droite */
+    font-family: Nunito Sans;
+}
+
+
+.compt {
+    display: flex;  /* Utilise flexbox pour aligner les éléments horizontalement */
+    align-items: center;  /* Centre verticalement l'image et le titre */
+    margin-left: 10rem;  /* Aligne horizontalement à gauche */
+    margin-top: 1rem;  /* Ajoute un peu d'espace en haut */
+}
+
+.expimg {
+    height: 40px;
+    margin-bottom: 20PX;
+    margin-left: 1rem;
+}
+
+.p5 {
+    font-size: 18px;
+    margin-top: 2rem;  /* Ajoute un espace au-dessus de .p5 */
+    margin-left: 20rem; /* Aligne horizontalement avec .title5 */
+    font-family: Poppins;
+    
+    
+}
+
+.experience-container {
+    display: flex; /* Utilise Flexbox pour aligner horizontalement */
+    align-items: center; /* Centre verticalement les éléments */
+    margin-left: 5rem; /* Ajuste l'espacement à gauche si nécessaire */
+}
+
+.experience {
+    margin-top: 0; /* Supprime les marges en haut */
+    padding-top: 0; /* Supprime le padding en haut */
+    position: relative;
+    top: -60px; /* Décale l'élément vers le haut */
+}
+
+
+.ids {
+    height: 40px; /* Assurez-vous que l'image a la bonne taille */
+    margin-right: 1rem; /* Ajoute un espace entre l'image et le texte */
+}
+
+.compt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 2rem; /* Réduit la marge à gauche */
+    margin-top: 1rem;
+}
+
+.p6 {
+    font-size: 15px;
+    color: black;
+    font-family: Nunito Sans;
+    margin-top: 0;
+    margin-left: 0rem; /* Aligne le paragraphe à gauche */
+}
+
+
+/* Flexbox container for images under .p6 */
+.p6-images {
+    display: flex;
+    justify-content: flex-start; /* Aligne les images à gauche */
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 0; /* Aligne les images avec le texte */
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+/* Style for each image */
+.p6-images img {
+    width: 60px;  /* Fixe une largeur uniforme pour les images */
+    height: 60px;  /* Fixe une hauteur uniforme pour les images */
+    object-fit: contain;  /* Assure que les images gardent leurs proportions */
+    
+}
+
+/* Styling for the .focus section */
+/* Styling for the .focus section */
+/* Styling for the .focus section */
+.focus {
+    display: flex;               /* Utilise Flexbox */      /* Aligne les éléments verticalement */
+    border: 1px solid grey;
+    padding: 20px;
+    width: 60%;                  /* Largeur de la boîte */
+    margin: 0 auto;              /* Centre la boîte sur la page */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+}
+
+.title7 {
+    font-size: 20px;
+    color: black;
+    font-family: Nunito Sans;
+    margin-left: 0; /* Garde le titre aligné à gauche */
+    margin-top: 5rem;
+}
+
+.experience-details {
+    display: flex;
+    align-items: flex-start; /* Aligne les éléments à gauche */
+    margin-top: 1rem;
+    margin-left: 0; /* Garde les détails alignés à gauche */
+}
+
+
+
+.ids {
+    height: 60px;  /* Taille de l'image */
+    margin-right: 1rem;  /* Espace entre l'image et le texte */
+}
+
+.p8 {
+    font-size: 13px;
+    color: black;
+    font-family: Poppins;
+    margin: 0;
+}
+
+.expbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligne à gauche */
+    justify-content: flex-start; /* Aligne en haut */
+    padding: 20px; /* Ajuste légèrement le padding */
+    width: 30%;
+    margin: 0 auto; /* Supprime les marges inutiles */
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    margin-left: 5rem;
+    margin-bottom: 1rem; /* Réduit la marge en bas */
+}
+
+
+
+
+
+.expbox img {
+    margin-bottom: 10px; /* Espace entre l'image et le texte */
+}
+
+
+
+.title9{
+    font-size: 40px;
+    color: black;
+    font-family: Nunito Sans;
+    margin: 0;  /* Supprime tout espacement supplémentaire */
+    text-align: center;
+    margin-top: 7rem;
+}
+
+.p10{
+    font-size: 15px;
+    color: black;
+    font-family: Poppins;
+    margin: 0;  /* Supprime tout espacement supplémentaire */
+    margin-top: 3rem;
+    text-align: center;
+
+}
+
+button{
+    background-color: #000000; /* La couleur de fond */
+    color: white; /* La couleur du texte */
+    padding: 10px 20px; /* L'espace entre le texte et les b
+
+    cursor: pointer; /* Change le curseur en main */
+    font-size: 20px; /* Taille du texte */
+    border: white;
+    font-family: Nunito Sans;
+    cursor: pointer;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem auto;
+    margin-left: 34rem;
+    margin-top: 3rem;
+    
+    
+    
+}
+
+.experience-focus-container {
+    display: flex;               /* Flexbox pour aligner les sections horizontalement */
+    justify-content: center;     /* Centrer les éléments horizontalement */
+    align-items: flex-start;     /* Aligner les éléments en haut */
+    gap: 20px;                   /* Espace entre les deux boîtes */
+    margin: 0 auto;              /* Centrer horizontalement */
+    width: 80%;    
+                  /* Ajuste la largeur globale */
+    cursor: pointer ;
+}
+
+.focus, .expbox {
+    width: 48%;                  /* Ajuste la largeur de chaque section */
+    margin: 0;                   /* Supprimer les marges internes */
+    padding: 20px;               /* Ajoute du padding à l'intérieur */
+    background-color: white;
+}
+
+.compt {
+    align-items: flex-start;      /* Aligner les éléments de compt à gauche */
+}
+
+
+.titlee {
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    color: black;
+    margin-bottom: 0.5rem;
+    margin-left: 10rem; /* Ajuste cette valeur pour déplacer vers la droite */
+    font-family: Nunito Sans;
+}
+
+
+.pk {
+    font-size: 15px;
+    color: black;
+    font-family: Nunito Sans;
+    margin-top: 0;
+    margin-left: 8rem; /* Aligne le paragraphe à gauche */
+}
+
+
+h2{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+
+.left {
+    height: 13rem;
+    margin-left: 14rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Ajout d'une transition */
+    cursor: pointer;
+}
+
+/* Effet au survol */
+.left:hover {
+    transform: translateY(-10px) scale(1.05); /* Déplacement léger vers le haut et agrandissement */
+
+}
+
+.subtitleee{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    color: black;
+    margin-top: 1rem;
+    margin-left: 10rem;
+    font-family: Nunito Sans;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+    gap: 2rem; /* Espace entre les projets */
+    justify-content: center; /* Centre les projets horizontalement */
+    margin-top: 3rem; /* Espace au-dessus des projets */
+    margin-left: -6rem; /* Décale tout le conteneur vers la gauche */
+  }
+  
+  .projects-container h1 {
+    width: 100%; /* Le titre occupe toute la largeur */
+    text-align: center; /* Centrer le texte du titre */
+    margin-bottom: 2rem; /* Ajoute un espace sous le titre */
+  }
+  
+  .img-container {
+    display: flex;
+    flex-direction: column; /* Empile l'image et le texte verticalement */
+    align-items: flex-start; /* Aligne les éléments à gauche */
+    width: 30%; /* Largeur de chaque projet */
+  }
+  
+  .last-project {
+    align-self: center; /* Centre le dernier projet sur la ligne suivante */
+    margin-top: 2rem; /* Ajoute un espace au-dessus pour séparer visuellement */
+  }
+
+  .projects-container h1 {
+    width: 100%; /* Le titre occupe toute la largeur */
+    margin-left: 7rem;
+    margin-bottom: 2rem; /* Ajoute un espace sous le titre */
+  }
+  
+  /* Container global */
+.container {
+    max-width: 1200px; /* Largeur maximale pour une meilleure mise en page */
+    margin: 0 auto; /* Centre le contenu sur la page */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: flex;
+    flex-wrap: wrap; /* Permet de passer en lignes multiples sur les petits écrans */
+    gap: 20px; /* Espace entre les cartes */
+    justify-content: center; /* Centre les cartes dans la page */
+  }
+  
+  /* Style général pour les petites cartes */
+  .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    width: 100%;
+    max-width: 250px; /* Taille des petites cartes */
+    padding: 20px;
+    text-align: center; /* Centrer le contenu */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation douce */
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    transform: translateY(-3px); /* Légère élévation au survol */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Ombre plus accentuée au survol */
+  }
+  
+  /* Titres dans les cartes */
+  .card h2 {
+    font-size: 1.2rem;
+    color: #000000; /* Bleu */
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    text-align: justify;
+    color: #555;
+    margin-bottom: 10px;
+  }
+
+  .left {
+    height: 13rem;
+    margin-left: 0rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Ajout d'une transition */
+    cursor: pointer;
+  }
+  
+  /* Ligne de séparation */
+  .card hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+  }
+  
+  /* Section des titres globaux */
+  .container h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #000000;
+  }
+  
+  
+  #vieille {
+    display: flex;
+    justify-content: center; /* Centre le contenu horizontalement */
+    align-items: flex-start; /* Aligne le contenu en haut */
+    height: 90vh;            /* Réduit la hauteur pour remonter le contenu */
+    padding: 2rem;           /* Ajoute un peu de padding */
+}
+
+#vieille .container {
+    display: flex;
+    flex-direction: column;  /* Empile l'image et le texte verticalement */
+    align-items: center;     /* Centre les éléments horizontalement */
+    text-align: center;      /* Centre le texte */
+}
+
+#vieille .left {
+    margin-top: 2rem;        /* Un peu d'espace au-dessus de l'image */
+    height: 13rem;           /* Taille de l'image */
+    width: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+#vieille .left:hover {
+    transform: translateY(-10px) scale(1.05); /* Effet au survol */
+}
+
+h2 {
+    margin-bottom: 1.5rem;   /* Espace entre le titre et l'image */
+    margin-top: 0;           /* Supprime l'espace par défaut du titre */
+    font-size: 2rem;         /* Taille du titre */
+    color: black;            /* Couleur du texte */
+}
+
+.contact-container {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 3rem; /* Réduction de la marge */
+}
+
+.contact-container h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+.contact-container p {
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 16px;
+}
+.contact-container a {
+    color: grey;
+    text-decoration: none;
+    font-weight: bold;
+}
+.contact-container .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.contact-container .btn:hover {
+    background-color: grey;
+}
+
+
+.school-description {
+    margin-top: 60px;
+    padding: 40px 20px;
+    background-color: transparent;
+    color: grey;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+
+}
+ 
+.school-description h2 {
+    font-size: 2.8rem;
+    color: black;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+ 
+.school-description h2::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 4px;
+    background: #000000;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+ 
+.school-description p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+ 
+.school-description .options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    background-color: transparent;
+}
+ 
+.school-description .option {
+    flex: 1 1 calc(50% - 40px); /* Deux colonnes, ajustées avec le gap */
+    max-width: 450px;
+
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+ 
+.school-description .option:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.2); /* Légère surbrillance au survol */
+}
+ 
+.school-description .option h3 {
+    font-size: 1.5rem;
+    color: #000000;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+ 
+.school-description .option h3 i {
+    font-size: 1.8rem;
+    color: #000000;
+}
+ 
+.school-description .option p {
+    font-size: 1rem;
+    color: black;
+    line-height: 1.6;
+    text-align: justify;
+}
+ 
+/* Animation au chargement */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+ 
+.school-description .option {
+    animation: fadeInUp 1s ease-in-out;
+}
+ 
+.school-description .option:nth-child(1) {
+    animation-delay: 0.2s;
+}
+ 
+.school-description .option:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+
+/* Styles pour le footer */
+footer {
+    background: var(
+      --color-gradient
+    ); /* Utilisez background au lieu de background-color */
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+  }
+   
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+   
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+   
+  .footer-content p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+   
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+   
+  .footer-links li {
+    display: inline-block;
+  }
+   
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+   
+  .footer-links a:hover {
+    color: var(--color-2); /* Vert menthe au survol */
+  }
+   
+  .footer-socials {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+   
+  .footer-socials .social-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+   
+  .footer-socials .social-link:hover {
+    color: var(--color-2); /* Vert menthe au survol */
+  }
+  
+
