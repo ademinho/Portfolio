@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio de Adem Ben Abdesselem - Développeur Fullstack et Mobile" />
+  <title>Adem Ben Abdesselem - Portfolio</title>
   <link rel="stylesheet" href="view/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,119 +17,121 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
     rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
 
 <body>
-  <img class="profil" src="img/IMG_3982.jpg" alt="">
-  <nav class="navbar">
-    <div class="nav">
-      <ul>
-        <li><a href="#aboutme">About Me</a></li>
-        <li><a href="#projets">Projets</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <!-- LinkedIn and GitHub icons -->
-        <li>
-          <a href="https://www.linkedin.com/in/adem-ben-abdesselem-7bb163250/" target="_blank" rel="noopener noreferrer">
-              <img class="linkedin" src="img/logo-linkedin-noir.png" alt="LinkedIn Logo" />
-          </a>
-      </li>
-      <li>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-              <img  class="github" src="img/github_logo_icon_229278.png" alt="GitHub Logo" />
-          </a>
-      </li>
-      
-      </ul>
-    </div>
+  <header>
+    <nav class="navbar">
+      <img class="profil" src="img/IMG_3982.jpg" alt="Photo de profil de Adem Ben Abdesselem">
+      <div class="nav">
+        <ul>
+          <li><a href="#aboutme">À propos</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/adem-ben-abdesselem-7bb163250/" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/AdemBenAbdesselem" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <button class="theme-toggle" aria-label="Basculer le thème">
+      <i class="fas fa-moon"></i>
+    </button>
+  </header>
 
+  <main>
+    <br>
+    <br>
+    <br>
+    <section id="aboutme" class="hero">
+      <div class="header">
+        <h1 class="title">Bonjour, je suis Adem Ben.</h1>
+        <h2 class="subtitle">Développeur Fullstack et Mobile</h2>
+        <p class="text">
+          Je suis étudiant en BTS SIO option SLAM à la grande école d'informatique IPPSI.
+          Passionné par le développement web et mobile, je crée des solutions innovantes
+          pour répondre aux besoins des utilisateurs.
+        </p>
+      </div>
+        
 
-    </div>
-  </nav>
+        <br />
+        <br />
+        <br />
+        <br />
 
-  <nav class="main">
-    <div class="header">
-      <h1 class="title">Hi, I'm Adem Ben.</h1>
-      <h2 class="subtitle">Développeur Fullstack et Mobile.</h2>
-      <p class="text">
-        Hello, je suis Adem Ben Abdesselem, etudiant en BTS SIO option SLAM à
-        la grande école d'informatique IPPSI. <br />
-        Voici mon portfolio !
-      </p>
-      
+       
+      </div>
+      <div class="school-header">
+        <h1 class="title2">Mon Parcours Scolaire</h1>
 
-      <br />
-      <br />
-      <br />
-      <br />
+        <!-- Flex container for p1 and p2 -->
+        <div class="school-info">
+          <p class="p1">2023 - Présent</p>
+          <p class="p2">IPSSI Grande Ecole d'Informatique</p>
+        </div>
 
-     
-    </div>
-    <div class="school-header">
-      <h1 class="title2">Mon Parcours Scolaire</h1>
-
-      <!-- Flex container for p1 and p2 -->
-      <div class="school-info">
-        <p class="p1">2023 - Présent</p>
-        <p class="p2">IPSSI Grande Ecole d'Informatique</p>
+        <!-- p3 outside the flex container to be displayed below -->
+        <p class="p3">Actuellement en deuxième année de BTS SIO option SLAM</p>
       </div>
 
-      <!-- p3 outside the flex container to be displayed below -->
-      <p class="p3">Actuellement en deuxième année de BTS SIO option SLAM</p>
-    </div>
+      <div class="school-header">
 
-    <div class="school-header">
+        <!-- Flex container for p1 and p2 -->
+        <div class="school-info">
+          <p class="p1">2020 - 2023</p>
+          <p class="p2">Lycée Violet le Duc</p>
+        </div>
 
-      <!-- Flex container for p1 and p2 -->
-      <div class="school-info">
-        <p class="p1">2020 - 2023</p>
-        <p class="p2">Lycée Violet le Duc</p>
+        <!-- p3 outside the flex container to be displayed below -->
+        <p class="p3">Baccalauréat Général option Mathématique, Science économique et Social, et Géopolitique </p>
+
       </div>
 
-      <!-- p3 outside the flex container to be displayed below -->
-      <p class="p3">Baccalauréat Général option Mathématique, Science économique et Social, et Géopolitique </p>
-
-    </div>
 
 
 
 
+      <div class="projects-container">
+        <h1>Mes projets</h1>
+        <div class="img-container">
+          <div class="project-item">
+            <img class="img1" src="img/IMG_3947.webp" alt="IDS Informatique">
+            <p class="p4">Développement du site web de l'entreprise IDS INFORMATIQUE, permettant au clients de prendre
+              connaissance des actions de l'entreprise et de faciliter la prise de rendez vous.</p>
+          </div>
 
-    <div class="projects-container">
-      <h1>Mes projets</h1>
-      <div class="img-container">
-        <img class="img1" src="img/IMG_3947.webp" alt="">
-        <p class="pop">Stage Projets</p>
-        <p class="p4">Développement du site web de l'entreprise IDS INFORMATIQUE, permettant au clients de prendre
-          connaissance des actions de l'entreprise <br>et de faciliter la prise de rendez vous.</p>
+          <div class="project-item">
+            <img class="img1" src="img/projet.PNG" alt="Application météo">
+            <p class="p4">Application permettant de retranscrire les données météorologique de notre positions.</p>
+          </div>
+
+          <div class="project-item">
+            <img class="img1" src="img/space.png" alt="Application de voyage">
+            <p class="p4">Application permettant la réservation de voyage, de chambre hotel.</p>
+          </div>
+
+          <div class="project-item">
+            <img class="img1" src="img/geo gssr.PNG" alt="Planet Puzzle">
+            <p class="p4">Application de jeu géographique permettant de tester ses connaissances sur les pays du monde.</p>
+          </div>
+
+          <div class="project-item">
+            <a href="https://testipformation-my.sharepoint.com/:w:/g/personal/k_mokhtari_ecole-ipssi_net/Ec1etnr8HkNPv1nadM5phfgBM3QJALdYl_MjJ9QXDauOXw?rtime=3IdA5A0e3Ug" target="_blank">
+              <img class="img1" src="img/Glpi_screenshot.png" alt="GLPI Plugin">
+            </a>
+            <p class="p4">Création d'un plugin pour GLPI permettant de faciliter la gestion des tickets.</p>
+          </div>
+        </div>
       </div>
-    
-      <div class="img-container">
-        <img class="img1" src="img/projet.PNG" alt="">
-        <p class="pop">School Projet</p>
-        <p class="p4">Application permettant de retranscrire les données météorologique de notre positions.</p>
-      </div>
-    
-      <div class="img-container">
-        <img class="img1" src="img/space.png" alt="">
-        <p class="pop">School Projet AP1</p>
-        <p class="p4">Application permettant la réservation de voyage, de chambre hotel.</p>
-      </div>
-
-      <div class="img-container">
-        <img class="img1" src="img/geo gssr.PNG" alt="">
-        <p class="pop">Projet GLPI</p>
-        <p class="p4">Création d'un plugin pour GLPI permettant de faciliter la gestion des tickets.</p>
-      </div>
-
-      <div class="img-container">
-        <a href="https://testipformation-my.sharepoint.com/:w:/g/personal/k_mokhtari_ecole-ipssi_net/Ec1etnr8HkNPv1nadM5phfgBM3QJALdYl_MjJ9QXDauOXw?rtime=3IdA5A0e3Ug" target="_blank">
-          <img class="img1" src="img/Glpi_screenshot.png" alt="GLPI Plugin">
-        </a>
-        <p class="pop">Projet GLPI</p>
-        <p class="p4">Création d'un plugin pour GLPI permettant de faciliter la gestion des tickets.</p>
-      </div>
-      
-    
 
       <br />
       <br />
@@ -138,117 +142,208 @@
       </div>
     </nav>
 
-    <nav class="experience-focus-container">
-      <nav class="focus">
-        <div class="compt">
-
-          <h1 class="title5">Mes compétences techniques.</h1>
-          <p class="p6">Avec le temps, j'ai acquis des compétences dans différents <br>domaines de la programmation.
-            Voici quelques technologies <br>que j'utilise régulièrement.</p>
-          <div class="p6-images">
-            <img src="img/HTML-5-Badge-Logo-2.png" alt="HTML5 Logo">
-            <img src="img/css-3.png.png" alt="CSS3 Logo">
-            <img src="img/php-2.png" alt="PHP Logo">
-            <img src="img/png-transparent-javascript-logo-html-javascript-logo-angle-text-rectangle-thumbnail-2.png"
-              alt="JavaScript Logo">
-            <img src="img/png-transparent-js-react-js-logo-react-react-native-logos-icon-thumbnail-2.png"
-              alt="React Logo">
-            <img src="img/png-transparent-tailwind-css-hd-logo-2.png" alt="Tailwind CSS Logo">
-          </div>
-        </div>
-      </nav>
-
-      <nav class="expbox">
-        <div class="experience">
-          <h1 class="title7">Mes Expériences</h1>
-          <div class="experience-details">
-            <img class="ids" src="img/bf5eee_c726e8f4efeb4c9899693d6e95dbcd14~mv2_d_1889_2097_s_2.png" alt="">
-            <p class="p8">Stagiaire en tant que Développeur Fullstack</p>
-            <img class="ids" src="img/Logo-Acksys-343x247-1.jpg" alt="">
-            <p class="p8">Alternant en tant que développeur</p>
-          </div>
-        </div>
-      </nav>
-    </nav>
-
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <div class="school-description">
-      <h2>Le BTS SIO</h2>
-      <div class="options">
-      <div class="option">
-      <h3><i class="fas fa-code"></i> Option SLAM</h3>
-      <p>L'option SLAM (Solutions Logicielles et Applications Métiers) se concentre sur le développement et la
-                      programmation d'applications informatiques, la gestion des bases de données et la création de solutions
-                      logicielles sur mesure.</p>
+    <div class="skills-experience">
+      <div class="section-titles">
+        <h2 class="section-title">Compétences Techniques</h2>
+        <h2 class="section-title">Expériences Professionnelles</h2>
       </div>
-      <div class="option">
-      <h3><i class="fas fa-network-wired"></i> Option SISR</h3>
-      <p>L'option SISR (Solutions d'Infrastructure, Systèmes et Réseaux) est orientée vers l'administration des
-                      réseaux, la gestion des systèmes informatiques et la mise en place des infrastructures techniques au
-                      sein des entreprises.</p>
-      </div>
-      </div>
-      </div>
-    
-
-<br>
-<br>
-
-      <section id="vieille">
-        <div class="container">
-          <h2>Ma veille technologique</h2>
-          <div class="content">
-            <div class="left">
-              <img class="left" src="img/veille.PNG" alt="Image 1">
+      
+      <div class="sections-container">
+        <div class="skills-container">
+          <div class="skills-grid">
+            <div class="skill-card">
+              <img src="img/HTML-5-Badge-Logo-2.png" alt="HTML5">
+              <span>HTML5</span>
+            </div>
+            <div class="skill-card">
+              <img src="img/css-3.png.png" alt="CSS3">
+              <span>CSS3</span>
+            </div>
+            <div class="skill-card">
+              <img src="img/php-2.png" alt="PHP">
+              <span>PHP</span>
+            </div>
+            <div class="skill-card">
+              <img src="img/png-transparent-javascript-logo-html-javascript-logo-angle-text-rectangle-thumbnail-2.png" alt="JavaScript">
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-card">
+              <img src="img/png-transparent-js-react-js-logo-react-react-native-logos-icon-thumbnail-2.png" alt="React">
+              <span>React</span>
+            </div>
+            <div class="skill-card">
+              <img src="img/png-transparent-tailwind-css-hd-logo-2.png" alt="Tailwind CSS">
+              <span>Tailwind CSS</span>
             </div>
           </div>
         </div>
-      </section>
 
+        <div class="experience-container">
+          <div class="experience-grid">
+            <div class="experience-card">
+              <img src="img/bf5eee_c726e8f4efeb4c9899693d6e95dbcd14~mv2_d_1889_2097_s_2.png" alt="IDS Informatique">
+              <span>Développeur Fullstack</span>
+              <div class="experience-type">Stage</div>
+            </div>
 
+            <div class="experience-card">
+              <img src="img/Logo-Acksys-343x247-1.jpg" alt="Acksys">
+              <span>Développeur</span>
+              <div class="experience-type">Alternance</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="contact-container">
-      <h2>Contactez-moi</h2>
-      <p>Email : <a href="mailto:ademben7877@gmail.com">ademben7877@gmail.com</a></p>
-      <a href="img/BEN ABDESSELEM Adem CV (2).pdf" class="btn" download>Télécharger mon CV</a>
-      <a href="https://docs.google.com/spreadsheets/d/1tSvispL8dAdToqTYQt0URfeuQQoF3b4p/edit?usp=sharing&ouid=100363492828202497248&rtpof=true&sd=true" 
-   class="btn" 
-   target="_blank" 
-   rel="noopener noreferrer">
-   Voir ma synthèse
-</a>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <hr class="hr1" />
+
+    <div class="bts-section">
+      <h2 class="bts-title">Le BTS SIO</h2>
+      
+      <div class="options-container">
+        <div class="option-card">
+          <div class="option-header">
+            <i class="fas fa-code"></i>
+            <h3>Option SLAM</h3>
+          </div>
+          <div class="option-content">
+            <p class="option-description">Solutions Logicielles et Applications Métiers</p>
+            <p>L'option SLAM (Solutions Logicielles et Applications Métiers) se concentre sur le développement et la
+              programmation d'applications informatiques, la gestion des bases de données et la création de solutions
+              logicielles sur mesure.</p>
+          </div>
+        </div>
+
+        <div class="option-card">
+          <div class="option-header">
+            <i class="fas fa-network-wired"></i>
+            <h3>Option SISR</h3>
+          </div>
+          <div class="option-content">
+            <p class="option-description">Solutions d'Infrastructure, Systèmes et Réseaux</p>
+            <p>L'option SISR (Solutions d'Infrastructure, Systèmes et Réseaux) est orientée vers l'administration des
+              réseaux, la gestion des systèmes informatiques et la mise en place des infrastructures techniques au
+              sein des entreprises.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bts-footer">
+        <div class="stats-container">
+          <div class="stat-item">
+            <span class="stat-number">2</span>
+            <span class="stat-label">Années de formation</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">1350</span>
+            <span class="stat-label">Heures de formation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+  <section id="vieille" class="veille-section">
+    <div class="veille-container">
+      <h2 class="veille-title">Ma Veille Technologique</h2>
+      <div class="veille-content">
+        <div class="veille-text">
+          <p class="veille-description">
+            Je réalise une veille technologique constante sur les dernières tendances du monde de la tech.
+          </p>
+          <a href="https://docs.google.com/spreadsheets/d/1tSvispL8dAdToqTYQt0URfeuQQoF3b4p/edit?usp=sharing&ouid=100363492828202497248&rtpof=true&sd=true" 
+             class="veille-btn" 
+             target="_blank">
+            <i class="fas fa-external-link-alt"></i>
+            Consulter ma veille technologique
+          </a>
+        </div>
+        <div class="veille-image">
+          <img src="img/veille.PNG" alt="Veille technologique">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</div>
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+    <h2 class="contact-title">Contactez-moi</h2>
+    <div class="contact-content">
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <div class="contact-details">
+            <h3>Email</h3>
+            <a href="mailto:ademben7877@gmail.com">ademben7877@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fab fa-linkedin"></i>
+          <div class="contact-details">
+            <h3>LinkedIn</h3>
+            <a href="https://www.linkedin.com/in/adem-ben-abdesselem-7bb163250/" target="_blank">Adem Ben Abdesselem</a>
+          </div>
+        </div>
+      </div>
+      <div class="contact-actions">
+        <a href="img/BEN ABDESSELEM Adem CV (2).pdf" class="contact-btn" download>
+          <i class="fas fa-download"></i>
+          <span>Télécharger mon CV</span>
+        </a>
+        <a href="https://docs.google.com/spreadsheets/d/1WbkV5TBoNcHTbE925oZE5wuChrfeAcA4evI_A0s8qCk/edit?usp=sharing" 
+           class="contact-btn" 
+           target="_blank">
+          <i class="fas fa-chart-line"></i>
+          <span>Voir ma synthèse</span>
+        </a>
+      </div>
+    </div>
   </div>
+</section>
 
+</main>
 
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2024 Adem Ben Abdesselem. Tous droits réservés.</p>
+  </div>
+</footer>
 
-    </nav>
+<script>
+  const themeToggle = document.querySelector('.theme-toggle');
+  const root = document.documentElement;
+  
+  // Vérifier si un thème est déjà sauvegardé
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme) {
+    root.setAttribute('data-theme', savedTheme);
+    updateThemeIcon(savedTheme);
+  }
 
+  themeToggle.addEventListener('click', () => {
+    const currentTheme = root.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    
+    root.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    updateThemeIcon(newTheme);
+  });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  function updateThemeIcon(theme) {
+    const icon = themeToggle.querySelector('i');
+    icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+  }
+</script>
 </body>
 
 </html>
