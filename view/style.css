@@ -806,52 +806,51 @@ footer {
   filter: grayscale(30%) brightness(0.8); /* Ajuster la luminosité des logos */
 }
 
-/* Contact Section */
+/* Styles mis à jour pour la section contact */
 .contact-container {
-  margin: 4rem 0;
-  padding: 2rem;
-  background-color: var(--card-bg);
-  border-radius: var(--border-radius);
+  padding: 4rem 2rem;
+  background-color: var(--bg-secondary);
 }
 
 .contact-content {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  gap: 3rem;
-  margin-top: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .contact-info {
-  padding-right: 2rem;
-}
-
-.contact-info h3 {
-  font-size: 1.5rem;
-  color: var(--text-primary);
-  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .contact-description {
   color: var(--text-secondary);
-  margin-bottom: 2rem;
+  margin: 1.5rem 0;
+  font-size: 1.1rem;
   line-height: 1.6;
-  font-size: 0.95rem;
 }
 
 .contact-details {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
 }
 
 .contact-item {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 1rem;
+  padding: 1.5rem;
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateY(-5px);
 }
 
 .contact-icon {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--accent-color);
 }
 
@@ -861,8 +860,14 @@ footer {
   font-size: 1.1rem;
 }
 
-.contact-text p {
-  color: var(--text-secondary);
+.contact-email {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.contact-email:hover {
+  opacity: 0.8;
 }
 
 .contact-social {
@@ -870,95 +875,55 @@ footer {
   gap: 1rem;
 }
 
-.contact-social a {
-  color: var(--accent-color);
+.contact-social .social-link {
+  color: var(--text-primary);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.contact-social a:hover {
-  color: var(--text-primary);
+.contact-social .social-link:hover {
+  color: var(--accent-color);
 }
 
-/* Form Styles */
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  background-color: var(--bg-primary);
-  padding: 2rem;
-  border-radius: var(--border-radius);
+.contact-cta {
+  margin-top: 3rem;
 }
 
-.form-group {
-  display: flex;
-  flex-direction: column;
+.contact-button {
+  display: inline-flex;
+  align-items: center;
   gap: 0.5rem;
-}
-
-.form-group label {
-  color: var(--text-primary);
-  font-size: 0.9rem;
-}
-
-.form-group input,
-.form-group textarea {
-  padding: 0.8rem;
-  border: 1px solid var(--bg-secondary);
-  border-radius: var(--border-radius);
-  background-color: var(--bg-secondary);
-  color: var(--text-primary);
-  font-family: inherit;
-  transition: border-color 0.3s ease;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: var(--accent-color);
-}
-
-.submit-btn {
   padding: 1rem 2rem;
   background-color: var(--accent-color);
   color: white;
-  border: none;
+  text-decoration: none;
   border-radius: var(--border-radius);
-  cursor: pointer;
-  font-size: 1rem;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.submit-btn:hover {
+.contact-button:hover {
   transform: translateY(-2px);
-  background-color: var(--accent-color);
   opacity: 0.9;
 }
 
-/* Responsive adjustments for contact section */
-@media (max-width: 1024px) {
-  .contact-content {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-info {
-    padding-right: 0;
-  }
+.contact-button .icon {
+  font-size: 1.2rem;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
-  .contact-form {
-    padding: 1.5rem;
+  .contact-container {
+    padding: 3rem 1rem;
   }
-}
 
-@media (max-width: 480px) {
-  .contact-form {
+  .contact-details {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .contact-item {
     padding: 1rem;
-  }
-
-  .submit-btn {
-    width: 100%;
   }
 }
 
@@ -1021,7 +986,7 @@ footer {
 
 .experience-timeline {
   position: relative;
-  padding-left: 3rem;
+  padding-left: 2rem;
 }
 
 .experience-timeline::before {
@@ -1029,32 +994,27 @@ footer {
   position: absolute;
   left: 0;
   top: 0;
-  height: 100%;
+  bottom: 0;
   width: 2px;
-  background: var(--accent-color);
-  opacity: 0.3;
+  background-color: #00ff9d;
 }
 
 .experience-card {
   position: relative;
-  padding: 2rem;
-  background-color: var(--bg-primary);
-  border-radius: var(--border-radius);
   margin-bottom: 2rem;
-  transition: transform 0.3s ease;
+  padding-left: 1rem;
 }
 
 .experience-card::before {
   content: '';
   position: absolute;
-  left: -3rem;
-  top: 2rem;
+  left: -2rem;
+  top: 0.5rem;
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
-  background-color: var(--accent-color);
-  border: 3px solid var(--bg-primary);
-  box-shadow: 0 0 0 3px var(--accent-color);
+  background-color: #00ff9d;
+  border: 3px solid #1a1a1a;
 }
 
 .experience-card:hover {
@@ -1062,19 +1022,21 @@ footer {
 }
 
 .experience-period {
-  position: absolute;
-  left: -12rem;
-  top: 2rem;
-  min-width: 160px;
-  text-align: right;
+  margin-bottom: 1rem;
+  color: #00ff9d;
+  font-weight: 600;
+  font-size: 1.1rem;
 }
 
 .experience-period .year {
-  font-size: 0.95rem;
-  color: var(--accent-color);
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  white-space: nowrap;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.experience-period .duration {
+  font-size: 0.9rem;
+  color: #888;
+  font-style: italic;
 }
 
 .company-info {
@@ -1200,4 +1162,247 @@ footer {
   .company-info div h3 {
     font-size: 1.2rem;
   }
+}
+
+/* Styles pour la page Veille Technologique */
+.veille-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.veille-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.veille-header h1 {
+  font-size: 3rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+}
+
+.veille-intro {
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.veille-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.veille-card {
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.veille-card:hover {
+  transform: translateY(-5px);
+}
+
+.veille-content h2 {
+  font-size: 1.8rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.veille-description {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.veille-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.veille-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background-color: var(--accent-color);
+  color: white;
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.veille-button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.veille-button .icon {
+  font-size: 1.2rem;
+}
+
+/* Responsive Design pour la page Veille */
+@media (max-width: 768px) {
+  .veille-container {
+    padding: 2rem 1rem;
+  }
+
+  .veille-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .veille-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .veille-card {
+    padding: 1.5rem;
+  }
+}
+
+/* Styles pour la page Tableau de Synthèse */
+.synthese-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.synthese-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.synthese-header h1 {
+  font-size: 3rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+}
+
+.synthese-intro {
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.synthese-card {
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.synthese-actions {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.synthese-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background-color: var(--accent-color);
+  color: white;
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.synthese-button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.competences-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.competence-bloc {
+  padding: 1.5rem;
+  background-color: var(--bg-secondary);
+  border-radius: var(--border-radius);
+  transition: transform 0.3s ease;
+}
+
+.competence-bloc:hover {
+  transform: translateY(-5px);
+}
+
+.competence-bloc h3 {
+  color: var(--accent-color);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.competence-bloc h4 {
+  color: var(--text-primary);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.competence-bloc ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.competence-bloc li {
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.competence-bloc li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+}
+
+/* Responsive Design pour la page Synthèse */
+@media (max-width: 768px) {
+  .synthese-container {
+    padding: 2rem 1rem;
+  }
+
+  .synthese-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .competences-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .competence-bloc {
+    padding: 1.25rem;
+  }
+}
+
+/* Style spécifique pour le bouton CV */
+.social-link.cv {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.social-link.cv:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.social-link.cv img {
+  filter: brightness(0) invert(1); /* Pour rendre l'icône blanche */
+}
+
+[data-theme="light"] .social-link.cv img {
+  filter: brightness(0) invert(1); /* Garder l'icône blanche même en mode clair */
 }

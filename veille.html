@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille Technologique sur les Robots Chirurgiens</title>
+    <link rel="stylesheet" href="veille.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <img class="ipssi" src="./img/ipssi-logo.png" alt="IPSSI Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="parcours.html">Parcours</a></li>
+                <li><a href="bts.html">BTS</a></li>
+                <li><a href="projet.html">Projets</a></li>
+                <li><a href="veille.html">Veille Technologique</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="introduction">
+        <h1>Veille Technologique sur les Robots Chirurgiens</h1>
+        <p>Bienvenue sur notre page dédiée à la veille technologique sur les robots chirurgiens. Ici, nous explorons les dernières avancées dans ce domaine fascinant de la technologie médicale.</p>
+    </section>
+
+    <div class="main-container">
+        <div class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide"><img src="img/vt.jpeg" alt="Image de veille technologique"></li>
+                    <li class="splide__slide"><img src="img/vt1.png" alt="Image de veille technologique"></li>
+                    <li class="splide__slide"><img src="img/vt.jpeg" alt="Image de veille technologique"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section class="contact">
+        <h2>Contactez-Nous</h2>
+        <form>
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Copyright © 2023 My Portfolio</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/adem-ben-abdesselem-7bb163250/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var splide = new Splide('.splide', {
+                type: 'loop',
+                perPage: 1,
+                autoplay: true,
+                interval: 3000,
+                pauseOnHover: false,
+                resetProgress: false,
+            });
+            splide.mount();
+        });
+    </script>
+
+</body>
+
+</html>

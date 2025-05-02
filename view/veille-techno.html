@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Veille Technologique - Portfolio</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="top-nav">
+        <span>Mon Portfolio ! </span>
+        <div class="nav-links">
+          <a href="index.html#projets">Projets</a>
+          <a href="index.html#parcours">Parcours</a>
+          <div class="dropdown">
+            <a href="#" class="dropdown-trigger">BTS</a>
+            <div class="dropdown-content">
+              <a href="./index.html#bts">Présentation</a>
+              <a href="./veille-techno.html">Veille Technologique</a>
+              <a href="./index.html#tableau-synthese">Tableau de Synthèse</a>
+            </div>
+          </div>
+          <a href="index.html#ecole">École</a>
+          <a href="index.html#contact">Contact</a>
+          <div class="theme-toggle" role="button" aria-label="Toggle theme">🌙</div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="veille-container">
+      <section class="veille-header">
+        <h1>Veille Technologique</h1>
+        <p class="veille-intro">
+          Dans le cadre de mon BTS SIO, j'ai réalisé deux veilles technologiques sur des sujets d'actualité 
+          dans le domaine de l'informatique.
+        </p>
+      </section>
+
+      <section class="veille-grid">
+        <div class="veille-card">
+          <div class="veille-content">
+            <h2>Les robots chirurgiens</h2>
+            <p class="veille-description">
+              Ma première veille technologique a été de rechercher les dernières actualités sur les robots chirurgiens.
+            </p>
+            <div class="veille-actions">
+              <a href="/docs/Les Robots Chirurgiens.pdf" class="veille-button" target="_blank">
+                <span class="icon">📄</span>
+                Consulter le PDF
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="veille-card">
+          <div class="veille-content">
+            <h2>L'essor des véhicules autonomes</h2>
+            <p class="veille-description">
+              Ma seconde veille technologique a été de rechercher les dernières actualités sur les véhicules autonomes.
+            </p>
+            <div class="veille-actions">
+              <a href="/docs/LEssor-des-Vehicules-Autonomes-Une-Revolution-Technologique.pdf" class="veille-button" target="_blank">
+                <span class="icon">📄</span>
+                Consulter le PDF
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>©2025 Mon Portfolio.</p>
+    </footer>
+  </body>
+</html> 
